@@ -70,6 +70,7 @@ Copy the link from a specific login button to get the correct "redirect URL" for
 * **PlexTv**: Use any title as the app ID.
 * [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)
 * [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)
+* Authelia added by chrissie ^ x-tra-designs
 
 For details about Google's "Allow login only from specified domain" setting, see [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44). Use a comma-separated list for multiple domains.
 
