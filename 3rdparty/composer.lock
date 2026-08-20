@@ -120,6 +120,7 @@
                 "authorization",
                 "facebook",
                 "google",
+		"authelia",
                 "oauth",
                 "social",
                 "twitter"

@@ -47,6 +47,7 @@ class ProviderService
         'hide_social_login',
     ];
     const DEFAULT_PROVIDERS = [
+        'authelia',
         'apple',
         'google',
         'amazon',
@@ -427,6 +428,12 @@ class ProviderService
         if (strlen($uid) > 64 || !preg_match('#^[a-z0-9_.@-]+$#i', $profileId)) {
             $uid = $provider.'-'.md5($profileId);
         }
+
+        // authelia by chrissie
+        if ($provider === 'authelia') {
+                $uid = $profile->displayName;
+        }
+
         return $this->login($uid, $profile, $provider.'-');
     }
 
