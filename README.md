@@ -70,7 +70,13 @@ Copy the link from a specific login button to get the correct "redirect URL" for
 * **PlexTv**: Use any title as the app ID.
 * [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)
 * [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)
+
 * Authelia added by chrissie ^ x-tra-designs
+** to get authelia working, change URL in Provider/Authelia.php
+** Insert following in nextcloud database, with correct values:
+ INSERT INTO `oc_appconfig` (`appid`, `configkey`, `configvalue`, `type`, `lazy`) VALUES ('sociallogin', 'oauth_providers', '{\"authelia\":{\"appid\":\"nextcloud\",\"secret\":\"OdZl7194..........LrNntQT1Ptc..........88Z2vA0lnDSqmTS\"}}', '2', '0');
+** TODO: make a settings page in nextcloud sociallogin settings for this
+
 
 For details about Google's "Allow login only from specified domain" setting, see [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44). Use a comma-separated list for multiple domains.
 
