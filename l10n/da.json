@@ -7,6 +7,7 @@
     "New user created" : "Ny bruger oprettet",
     "Save" : "Gem",
     "None" : "Ingen",
+    "Team ID" : "Team ID",
     "Secret" : "Hemmelighed",
     "Automatically create groups if they do not exists" : "Opret automatisk grupper hvis de ikke eksisterer",
     "Hide default login" : "Skjul standard login",
